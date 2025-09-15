@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Website — Base Template</title>
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<header class="site-header">
+<nav class="main-nav">
+<h1> Personal Portfolio</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Education</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Projects</a></li>
+</ul>
+</nav>
+
+<section class="home">
+     <div class="container">
+     <h1>Hi! I'm Matt!</h1>
+     <h2>An Undergrad from West Visayas State University</h2>
+     <p class="tagline">Welcome to my personal portfolio website.</p>
+
+        <div class="socials">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-github'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+
+    </div>
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-holder">
+        <img src="nbg12.png" alt="home image">
+        </div>
+    </div>
+</div>
+</section>
+
+</header>
+
+
+<!-- Main content -->
+<main>
+<section class="hero">
+<div class="container">
+<h2>Welcome to the base template</h2>
+<p>This is a simple starting point. The stylesheet linked above is <code>styleszx.css</code>.</p>
+<a class="btn" href="#about">Learn more</a>
+</div>
+</section>
+
+
+<section id="about" class="container">
+<h3>About</h3>
+<p>Put your content here.</p>
+</section>
+</main>
+
+
+<!-- Site footer -->
+<footer class="site-footer container">
+<p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
+</footer>
+
+
+<!-- Small script to set current year (optional) -->
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>
