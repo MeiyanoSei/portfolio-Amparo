@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bars-anim{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+.bars-anim .bar{
+    width: 100%;
+    height: 100%; 
+    background-color: #4a2a5c;
+    transform: translateY(-100%);
+    animation: bars-down 0.5s ease-in-out forwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes bars-down{
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #351b44be;
+    opacity: 0;
+    visibility: hidden;
+    animation: nav-show 1s ease forwards;
+    animation-delay: 1.4s ;
+}
+@keyframes nav-show{
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.navbar .logo{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.7rem 3rem;
+    letter-spacing: 2px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    padding-right: 3rem;
+}
+.navbar ul li{
+    margin-left: 1rem;
+}
+
+.navbar ul li a{
+    display: flex;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover{
+    color: #1500ff;
+}
+
+.home{
+    letter-spacing: -0.01rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 10rem 9%;
+    color: white;
+    gap: 2rem;
+    justify-content: space-between;
+    opacity: 0;
+    visibility: hidden;
+    animation: nav-show 1s ease forwards;
+    animation-delay: 1.6s ;
+}
+.home-info{
+    flex: 1;
+}
+.home-info h1{
+    font-size: 3rem;
+    margin-bottom: -1rem;
+}
+.home-info h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.home-info p{
+    font-size: 1.2rem;
+    color: #d1d1d1;
+    font-weight: 300;
+}
+.home-info .home-btn{
+    margin-left: -1.2rem;
+}
+.home-info .home-btn a{
+    display: inline-flex;
+    margin-top: 1rem;
+    margin: 0.4rem 0.5rem;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 0.1rem solid rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.home-info .home-btn a i{
+    font-size: 2.5rem;
+}
+.home-info .home-btn a:hover{
+    background: white;
+    color: #000000;
+    transform: scale(1.1);
+}
+
+
+.home-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.home-img .img-box{
+    position: relative;
+    padding: 0.5rem;
+    height: 30vw;
+    width: 30vw;
+    background-color: rgba(127, 255, 212, 0);
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.home-img .img-box::before,
+.home-img .img-box::after{
+content: '';
+position: absolute;
+width: 30vw ;
+height: 30vw ;
+background: conic-gradient(transparent, transparent, transparent, #FF00FF);
+transform: rotate(0deg);
+animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .img-box::after{
+    animation-delay: -4s;
+}
+
+.home-img .img-box .img-item{
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #4a2a5c;
+    overflow: hidden;
+}
+.home-img .img-box .img-item img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+.about {
+    height: 85vh;
+    background-color:#4a2a5c;
+    text-align: center;  
+    padding: 1.2rem 2rem 0rem 2rem;        
+}
+
+.about h1 {
+    font-size: 3rem;
+    color: white;      
+}
+
+.about .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .box-holder {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100vw;                  /* keep huge spacing */
+    overflow-x: auto;            
+    scroll-snap-type: x mandatory; 
+    scroll-padding: 50vw;        /* tells snapping to treat 50vw as "center" */
+    padding: 2rem 1rem;             /* just vertical padding */
+}
+
+.about .box-holder .box {
+    flex: 0 0 auto;                          
+    height: 20rem;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.378);
+    scroll-snap-align: center;   /* now snaps to true center */
+    margin: 0 auto;              /* ensures centering for first box */
+}
+
+.scroll-btn{
+    border-radius: 50%;
+    margin-bottom: 0.95rem;
+    position: absolute; 
+}
+
+.btn-img:hover{
+    transform: scale(1.2rem)
+}
+
+.btn-img{
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem;
+    height: 5rem;
+}
+.left-btn{
+    background-color: aliceblue;
+    left: 2rem;
+}
+
+
+.right-btn{
+    background-color: aliceblue;
+    right: 2rem;
+}

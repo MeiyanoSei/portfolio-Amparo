@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Website — Base Template</title>
 
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -11,72 +11,67 @@
 </head>
 <body>
 
-<header class="site-header">
-<nav class="main-nav">
-<h1> Personal Portfolio</h1>
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Education</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="#">Projects</a></li>
-</ul>
-</nav>
+   
+  <nav class ="navbar">
+    <a href="" class="logo">MyPortfolio.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="bars-anim">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
 
 <section class="home">
-     <div class="container">
-     <h1>Hi! I'm Matt!</h1>
-     <h2>An Undergrad from West Visayas State University</h2>
-     <p class="tagline">Welcome to my personal portfolio website.</p>
-
-        <div class="socials">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
-        <a href="#"><i class='bx bxl-twitter'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        </div>
-
-    </div>
-    <div class="home-img">
+  <div class="home-info">
+    <h1>Hi! I'm Matt Arnel Amparo</h1>
+    <h2>Front-end/Back-end Developer</h2>
+    <p>I am a passionate web developer with a knack for creating dynamic and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life on the web.</p>
+       <div class="home-btn">
+        <a href="" class="btn"><i class='bx bxl-github'></i></a>
+        <a href="" class="btn"><i class='bx bxl-gmail'></i></a>
+        <a href="" class="btn"><i class='bx bxl-twitter'></i></a>
+        <a href="" class="btn"><i class='bx bxl-facebook'></i></a>
+        <a href="" class="btn"><i class='bx bxl-instagram'></i></a>
+       </div>
+       </div>
+       <div class="home-img">
         <div class="img-box">
-            <div class="img-holder">
-        <img src="nbg12.png" alt="home image">
+            <div class="img-item">
+                <img src="C:\College\3rd-Year\codes\portfolio-Amparo\nbg12.png" alt="">
+            </div>
         </div>
+       </div>
+
+  </section>
+
+
+  <section class="about">
+           <h1>About me:</h1>
+    
+      <div class="container">
+        <div class="left-btn scroll-btn"> <i class="btn-img lft"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 0-1.414l4-4a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293A1 1 0 0 1 14 17z" style="fill:#1c1b1e"/></svg></i></div> 
+        <div class="right-btn scroll-btn"> <i class="btn-img rght"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z" style="fill:#1c1b1e"/></svg></i></div>
+        
+        <div class="box-holder">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
     </div>
-</div>
-</section>
-
-</header>
-
-
-<!-- Main content -->
-<main>
-<section class="hero">
-<div class="container">
-<h2>Welcome to the base template</h2>
-<p>This is a simple starting point. The stylesheet linked above is <code>styleszx.css</code>.</p>
-<a class="btn" href="#about">Learn more</a>
-</div>
-</section>
-
-
-<section id="about" class="container">
-<h3>About</h3>
-<p>Put your content here.</p>
-</section>
-</main>
-
-
-<!-- Site footer -->
-<footer class="site-footer container">
-<p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
-</footer>
-
-
-<!-- Small script to set current year (optional) -->
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
+  </section>
 
 </body>
 </html>
