@@ -3,8 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <title>My Website — Base Template</title>
 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>
 <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
@@ -56,22 +59,109 @@
   </section>
 
 
-  <section class="about">
-           <h1>About me:</h1>
-    
-      <div class="container">
-        <div class="left-btn scroll-btn"> <i class="btn-img lft"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 0-1.414l4-4a1 1 0 1 1 1.414 1.414L11.414 12l3.293 3.293A1 1 0 0 1 14 17z" style="fill:#1c1b1e"/></svg></i></div> 
-        <div class="right-btn scroll-btn"> <i class="btn-img rght"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z" style="fill:#1c1b1e"/></svg></i></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="main-body">
+      <h1>My Works</h1>
         
-        <div class="box-holder">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-      </div>
+  <div class="container swiper">
+    <div class="card-wrapper">
+      <ul class="card-list swiper-wrapper">
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="swiper-pagination"></div>
+      <div class="swp-btn swiper-button-prev"></div>
+      <div class="swp-btn swiper-button-next"></div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+document.querySelectorAll('.swp-btn').forEach(btn => {
+  btn.addEventListener('mousedown', () => btn.classList.add('active'));
+  btn.addEventListener('mouseup', () => btn.classList.remove('active'));
+  btn.addEventListener('mouseleave', () => btn.classList.remove('active'));
+});
+</script>
 
 </body>
+
 </html>
+
+
