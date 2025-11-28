@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<title>My Website — Base Template</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"/>
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+   
+  <nav class ="navbar">
+    <a href="" class="logo">MyPortfolio.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <div class="bars-anim">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+
+<section class="home">
+  <div class="home-info">
+    <h1>Hi! I'm Matt Arnel Amparo</h1>
+    <h2>Front-end/Back-end Developer</h2>
+    <p>I am a passionate web developer with a knack for creating dynamic and user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I bring ideas to life on the web.</p>
+       <div class="home-btn">
+        <a href="" class="btn"><i class='bx bxl-github'></i></a>
+        <a href="" class="btn"><i class='bx bxl-gmail'></i></a>
+        <a href="" class="btn"><i class='bx bxl-twitter'></i></a>
+        <a href="" class="btn"><i class='bx bxl-facebook'></i></a>
+        <a href="" class="btn"><i class='bx bxl-instagram'></i></a>
+       </div>
+       </div>
+       <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="C:\College\3rd-Year\codes\portfolio-Amparo\nbg12.png" alt="">
+            </div>
+        </div>
+       </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+<section class="about">
+
+  <div class="about-body">
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="main-body">
+        
+  <div class="container swiper">
+    <div class="card-wrapper">
+      <ul class="card-list swiper-wrapper">
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+                <li class="card-item  swiper-slide">
+          <a href="" class ="card-link">
+            <img src="test.png" alt="" class="card-img">
+            <p class="badge">Master</p>
+            <h2 class="card-title">Lorem Ipsum Dolor sit explacibo bullshit</h2>
+            <button class="card-button material-symbols-rounded">arrow_forward</button>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="swiper-pagination"></div>
+      <div class="swp-btn swiper-button-prev"></div>
+      <div class="swp-btn swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+document.querySelectorAll('.swp-btn').forEach(btn => {
+  btn.addEventListener('mousedown', () => btn.classList.add('active'));
+  btn.addEventListener('mouseup', () => btn.classList.remove('active'));
+  btn.addEventListener('mouseleave', () => btn.classList.remove('active'));
+});
+</script>
+
+</body>
+
+</html>
+
+
